@@ -8,10 +8,11 @@ import Button from '@mui/material/Button';
 import logo from "@/assets/R (4).png";
 
 import Image from 'next/image';
-import { IconButton } from '@mui/material';
+import { IconButton, Typography } from '@mui/material';
 import { Facebook } from '@mui/icons-material';
 import Link from 'next/link';
 import Header from './Header';
+import { getCurrentDate } from '@/utils/getCurrentDate';
 
 const navLink = [
     {
@@ -41,10 +42,9 @@ const navLink = [
 ];
 
 function ResponsiveAppBar() {
-
     return (
         <>
-            <Box className="w-full flex justify-center items-center">
+            <Box className="w-full flex justify-center items-center my-10">
                 <Header></Header>
             </Box>
             <AppBar position="static" className='bg-black'>
